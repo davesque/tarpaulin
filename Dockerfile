@@ -13,4 +13,4 @@ RUN cd /opt/tarpaulin/ && \
 
 WORKDIR /volume
 
-CMD cargo build && cargo tarpaulin
+ENTRYPOINT ["/usr/local/cargo/bin/cargo"]
